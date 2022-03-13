@@ -1,1 +1,1 @@
-export * from './components/Logo/LitLogo'
+export * from './components/Logo/LitLogo/LitLogo.js'

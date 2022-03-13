@@ -2,6 +2,7 @@ import babel from 'rollup-plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
 import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
+import image from '@rollup/plugin-image';
 
 export default [
     {
@@ -31,6 +32,7 @@ export default [
             }),
             external(),
             resolve(),
+            image(),
         ]
     }
 ];

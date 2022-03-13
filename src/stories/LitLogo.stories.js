@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { LitLogo } from '../components/Logo/LitLogo.js';
+import { LitLogo } from '../components/Logo/LitLogo/LitLogo';
 
 
 const stories = storiesOf('Logo', module)
