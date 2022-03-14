@@ -1,4 +1,4 @@
-import '../../../styles.scoped.css'
+import styles from './LitLogo.module.scss'
 import logo from './lit-logo.png'
 
 export const LitLogo = ({title, subtitle, cursorPointer, onClick}) => {
@@ -8,18 +8,15 @@ export const LitLogo = ({title, subtitle, cursorPointer, onClick}) => {
     const _subtitle = subtitle ?? 'Lorem Ipsum';
     const _cursorPointer = cursorPointer ?? false;
 
-    // -- define styles
-    const styles = `lit flex justify-center ${_cursorPointer ? 'cursor-pointer' : ''}`;
-
     return (
-        <div onClick={onClick} className={styles}>
-            <div className='relative w-6 h-6 my-auto'>
+        <div onClick={onClick} className={`${styles.lit} ${_cursorPointer ? styles.cursorPointer : ''}`}>
+            <div>
                 <img src={logo} alt="Lit Protocol"/>
             </div>
-            <div className='flex justify-center pl-2'>
-                <h1 className='text-xl text-white m-auto'>
-                    <span className="md:text-base text-sm ml-[2px]">{ _title }</span>
-                    <span className="md:text-base text-sm ml-2 text-grey-text font-extralight">{ _subtitle }</span>
+            <div>
+                <h1>
+                    <span>{ _title }</span>
+                    <span>{ _subtitle }</span>
                 </h1>
             </div>
         </div>
