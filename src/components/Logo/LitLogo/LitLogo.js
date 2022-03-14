@@ -1,4 +1,4 @@
-import '../../../styles.css'
+import '../../../styles.scoped.css'
 import logo from './lit-logo.png'
 
 export const LitLogo = ({title, subtitle, cursorPointer, onClick}) => {
