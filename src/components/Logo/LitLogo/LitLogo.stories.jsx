@@ -13,4 +13,5 @@ Default.args = {
     title: "Lit Protocol",
     subtitle: "Lorem Ipsum",
     cursorPointer: true,
+    onClick: () => {alert("Testing!")},
 }

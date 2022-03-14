@@ -1,7 +1,7 @@
 import '../../../styles.css'
 import logo from './lit-logo.png'
 
-export const LitLogo = ({title, subtitle, cursorPointer}) => {
+export const LitLogo = ({title, subtitle, cursorPointer, onClick}) => {
 
     // -- prepare params
     const _title = title ?? 'Lit Protocol';
@@ -12,7 +12,7 @@ export const LitLogo = ({title, subtitle, cursorPointer}) => {
     const styles = `lit flex justify-center ${_cursorPointer ? 'cursor-pointer' : ''}`;
 
     return (
-        <div className={styles}>
+        <div onClick={onClick} className={styles}>
             <div className='relative w-6 h-6 my-auto'>
                 <img src={logo} alt="Lit Protocol"/>
             </div>
