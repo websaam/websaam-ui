@@ -18,6 +18,7 @@ export const InputText = ({
 }) => {
 
     const [toggle, setToggle] = useState(false);
+    const [value, setValue] = useState('');
 
     const toggleText = (e) => {
         e.target.innerText = toggle ? instruction.toggleTextShow : instruction.toggleTextHide;

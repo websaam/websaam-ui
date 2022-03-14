@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+.reversed .btn{
+    background: #14042A;
+    color: #E7DDFF;
+    border: #E7DDFF 1px solid;
+}
+.reversed .btn:hover{
+    background: #14042A;
+    border: #8159D9 1px solid;
+    color: #8159D9;
+}
+.btn{
+    font-family: "Space Grotesk";
+    color: white;
+    min-width: 4rem;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    border-radius: 1.5rem;
+    background: rgb(95 53 184 / 1);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    background: rgb(118 96 168 / 1);
+}

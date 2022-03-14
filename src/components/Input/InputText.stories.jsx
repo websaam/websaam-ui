@@ -4,8 +4,6 @@ import { InputText } from './InputText';
 export default {
     title: 'Input/Text',
     component: InputText,
-
-
 }
 
 const Template = (args) => <InputText {...args} />;
