@@ -1,10 +1,10 @@
 import '../../../styles.css'
 import logo from './lit-logo.png'
-import { useState } from 'react';
 
-export const LitLogo = () => {
+export const LitLogo = ({title, subtitle}) => {
 
-    const [count, setCount] = useState(0);
+    const _title = title ?? 'Lit Protocol';
+    const _subtitle = subtitle ?? 'Lorem Ipsum';
 
     return (
         <div className="lit flex justify-center">
@@ -13,8 +13,8 @@ export const LitLogo = () => {
             </div>
             <div className='flex justify-center pl-2'>
                 <h1 className='text-xl text-white m-auto'>
-                    <span className="md:text-base text-sm ml-[2px]">Lit Protocol</span>
-                    <span className="md:text-base text-sm ml-2 text-grey-text font-extralight">Gather Spaces</span>
+                    <span className="md:text-base text-sm ml-[2px]">{ _title }</span>
+                    <span className="md:text-base text-sm ml-2 text-grey-text font-extralight">{ _subtitle }</span>
                 </h1>
             </div>
         </div>
