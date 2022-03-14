@@ -1,6 +1,6 @@
 {
   "name": "@websaam/ui",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "rollup -c"
+    "build-lib": "rollup -c",
+    "publish": "npm version patch && npm publish"
   },
   "resolutions": {
     "webpack": "^5"
