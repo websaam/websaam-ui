@@ -9,7 +9,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build-lib": "rollup -c",
-    "publish": "rollup -c && npm version patch --force && npm publish"
+    "pub": "rollup -c && npm version patch --force && npm publish"
   },
   "resolutions": {
     "webpack": "^5"
