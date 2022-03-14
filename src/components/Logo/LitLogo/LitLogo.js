@@ -1,13 +1,18 @@
 import '../../../styles.css'
 import logo from './lit-logo.png'
 
-export const LitLogo = ({title, subtitle}) => {
+export const LitLogo = ({title, subtitle, cursorPointer}) => {
 
+    // -- prepare params
     const _title = title ?? 'Lit Protocol';
     const _subtitle = subtitle ?? 'Lorem Ipsum';
+    const _cursorPointer = cursorPointer ?? false;
+
+    // -- define styles
+    const styles = `lit flex justify-center ${_cursorPointer ? 'cursor-pointer' : ''}`;
 
     return (
-        <div className="lit flex justify-center">
+        <div className={styles}>
             <div className='relative w-6 h-6 my-auto'>
                 <img src={logo} alt="Lit Protocol"/>
             </div>
