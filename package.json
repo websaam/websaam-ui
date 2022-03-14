@@ -1,6 +1,6 @@
 {
   "name": "@websaam/ui",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -10,7 +10,8 @@
     "build-storybook": "build-storybook",
     "build-lib": "rollup -c",
     "bump": "npm version patch --force",
-    "pub": "yarn build-lib && yarn bump && npm publish"
+    "publish": "npm publish",
+    "pub": "yarn build-lib && yarn bump && yarn publish"
   },
   "resolutions": {
     "webpack": "^5"
