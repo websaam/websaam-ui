@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Button.module.scss'
-import PropTypes from 'prop-types';
 
 /**
  * Primary UI component for user interaction
@@ -31,18 +30,3 @@ export const Button = ({
         </div>
     );
 }
-
-Button.propTypes = {
-    /**
-     * Button contents
-     */
-    label: PropTypes.string.isRequired,
-    /**
-     * Type of action when the button is clicked
-     */  
-    type: PropTypes.oneOf(['link', 'callback']),
-};
-
-// Button.defaultProps = {
-//     type: 'react-link', // react-link, link, callback
-// };
